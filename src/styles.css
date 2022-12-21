@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --fuenteParrafos: 'Public Sans', sans-serif;
+    /* ### Primary */
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    /* ### Neutral */
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 18px;
+    background-color: var(--VeryLightGray);
+    font-family: var(--fuenteParrafos);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor{
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Estilos nav*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.header{
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    overflow: hidden;
+}
+.header__pattern{
+    position: absolute;
+    z-index: 2;
+    max-width: 100%;
+    height: inherit;
+    top: -35px;
+}
+.header__phones{
+    position: absolute;
+    width: 100%;
+    position: absolute;
+    height: inherit;
+    z-index: 3;
+    top: -135px;
+}
+.info{
+    text-align: center;
+    padding: 0 1rem;
+}
+.info__titulo{
+    color: var(--DarkBlue);
+    font-weight: 400;
+}
+.info__p{
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.info__btn{
+    border: none;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 25px;
+    min-width: 180px;
+    color: var(--White);
+    font-weight: 700;
+    font-family: var(--fuenteParrafos);
+    background: linear-gradient(90deg, var(--LimeGreen), var(--BrightCyan));
+}
