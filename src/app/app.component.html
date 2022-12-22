@@ -9,8 +9,8 @@
 
 <nav class="nav">
   <img class="nav__logo" src="src/../assets/images/logo.svg" alt="image-logo">
-  <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham': 'nav__ham--close'" src="../assets/images/icon-hamburger.svg" alt="icon-ham">
-  <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham--close' : 'nav__ham'" src="../assets/images/icon-close.svg" alt="icon-close">
+  <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham': 'nav__ham--close'" src="src/../assets/images/icon-hamburger.svg" alt="icon-ham">
+  <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham--close' : 'nav__ham'" src="src/../assets/images/icon-close.svg" alt="icon-close">
   <ul class="nav__ul">
     <li class="nav__li">Home</li>
     <li class="nav__li">About</li>
@@ -32,11 +32,11 @@
 <div class="menuMobile__capa" [ngClass]="mostrarMenu ? 'menuMobile__capa' : 'menuMobile__capa--activo' "></div>
 <header class="header">
   <picture class="header__pattern">
-    <img class="header__pattern--mobile" src="../assets/images/bg-intro-mobile.svg" alt="image intro mobile">
-    <img class="header__pattern--desktop" src="../assets/images/bg-intro-desktop.svg" alt="image intro desktop">
+    <img class="header__pattern--mobile" src="src/../assets/images/bg-intro-mobile.svg" alt="image intro mobile">
+    <img class="header__pattern--desktop" src="src/../assets/images/bg-intro-desktop.svg" alt="image intro desktop">
   </picture>
   <picture class="header__phones">
-    <img class="header__phones--size" src="../assets/images/image-mockups.png" alt="header mockups">
+    <img class="header__phones--size" src="src/../assets/images/image-mockups.png" alt="header mockups">
   </picture>
   <div class="header__info info">
     <h1 class="info__titulo info__titulo--header">Next generation <span class="d-block">digital baking</span></h1>
