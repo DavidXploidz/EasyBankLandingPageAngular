@@ -29,11 +29,12 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-@media (min-width: 768px){ 
+@media (min-width: 600px){ 
     .contenedor{
         max-width: 90rem;
         margin-left: auto;
         margin-right: auto;
+        width: 95%;
     }
 }
 .d-block{
@@ -44,6 +45,23 @@ img{
 }
 .mt-5{
     margin-top: 5rem;
+}
+.ul{
+    display: none;
+}
+@media (min-width: 600px){ 
+    .ul{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        margin: 0;
+    }
+}
+
+.ul__li{
+    list-style: none;
+    color: var(--GrayishBlue);
 }
 
 /*Estilos nav*/
@@ -63,6 +81,25 @@ img{
 }
 .nav__ham--close{
     display: none;
+}
+.nav__ul{
+    display: none;
+}
+.nav__li{
+    list-style: none;
+    color: var(--GrayishBlue);
+}
+@media (min-width: 600px){ 
+    .nav__ham{
+        display: none;
+    }
+    .nav__ul{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        margin: 0;
+    }
 }
 .menuMobile{
     position: fixed;
@@ -109,6 +146,7 @@ img{
     z-index: 2;
     max-width: 100%;
     height: inherit;
+    width: 100%;
     top: 22px;
 }
 .header__phones{
@@ -167,8 +205,18 @@ img{
     min-width: 180px;
     color: var(--White);
     font-weight: 700;
+    font-size: 18px;
     font-family: var(--fuenteParrafos);
     background: linear-gradient(90deg, var(--LimeGreen), var(--BrightCyan));
+}
+.info__btn--nav{
+    display: none;
+}
+@media (min-width: 600px){ 
+    .info__btn--nav{
+        margin: 0;
+        display: block;
+    }
 }
 .scroll{
     overflow: visible;
@@ -179,6 +227,8 @@ img{
 .card{
     margin-top: 3rem;
     background-color: var(--White);
+    padding: 0 0 1rem 0;
+    border-radius: 5px;
 }
 .card__image{
     border-top-left-radius: 5px;

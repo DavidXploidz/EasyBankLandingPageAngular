@@ -11,8 +11,16 @@
   <img class="nav__logo" src="../assets/images/logo.svg" alt="image-logo">
   <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham': 'nav__ham--close'" src="../assets/images/icon-hamburger.svg" alt="icon-ham">
   <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham--close' : 'nav__ham'" src="../assets/images/icon-close.svg" alt="icon-close">
+  <ul class="nav__ul">
+    <li class="nav__li">Home</li>
+    <li class="nav__li">About</li>
+    <li class="nav__li">Contact</li>
+    <li class="nav__li">Blog</li>
+    <li class="nav__li">Careers</li>
+  </ul>
+  <button class="info__btn info__btn--nav">Request Invite</button>
 </nav>
-<div class="menuMobile" [ngClass]="mostrarMenu ? 'menuMobile' : 'menuMobile--activo'">
+<nav class="menuMobile" [ngClass]="mostrarMenu ? 'menuMobile' : 'menuMobile--activo'">
   <ul class="menuMobile__ul">
     <li class="menuMobile__li">Home</li>
     <li class="menuMobile__li">About</li>
@@ -20,7 +28,7 @@
     <li class="menuMobile__li">Blog</li>
     <li class="menuMobile__li">Careers</li>
   </ul>
-</div>
+</nav>
 <div class="menuMobile__capa" [ngClass]="mostrarMenu ? 'menuMobile__capa' : 'menuMobile__capa--activo' "></div>
 <header class="header">
   <picture class="header__pattern">
