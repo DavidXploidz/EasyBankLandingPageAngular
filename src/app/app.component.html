@@ -8,7 +8,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <nav class="nav">
-  <img class="nav__logo" src="../assets/images/logo.svg" alt="image-logo">
+  <img class="nav__logo" src="src/../assets/images/logo.svg" alt="image-logo">
   <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham': 'nav__ham--close'" src="../assets/images/icon-hamburger.svg" alt="icon-ham">
   <img (click)="mostrarMenu = !mostrarMenu" [ngClass]="mostrarMenu ? 'nav__ham--close' : 'nav__ham'" src="../assets/images/icon-close.svg" alt="icon-close">
   <ul class="nav__ul">
@@ -81,7 +81,7 @@
 </main>
 
 <footer class="footer mt-5">
-  <img class="footer__logo" src="../assets/images/logo.svg" alt="image logo footer">
+  <img class="footer__logo" src="src/../assets/images/logo.svg" alt="image logo footer">
   <div class="footer__media">
     <img *ngFor="let icono of iconosMedia" src={{icono.imagen}} alt={{icono.id}}>
   </div>
